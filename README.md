@@ -25,7 +25,7 @@ API для управления фильмами, с системой аутен
 
 - Cклонируйте репозиторий git clone https://github.com/your-username/movie-api.git
 - Создание виртуального окружения python -m venv
-- Установка зависимостей проекта pip install -r requirements.txt
-- Заполните .env
+- Установка зависимостей проекта pip install -r requirements.txt 
+- Заполните - [.env](.env)
 - Инициализация базы данных python init_db.py
 - Запуск приложения python app.py Приложение будет доступно по адресу: http://localhost:25000

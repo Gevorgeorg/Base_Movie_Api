@@ -14,7 +14,7 @@ class MoviesView(Resource):
         page: int = request.args.get('page', type=int)
         director_id: int = request.args.get('director_id', type=int)
         genre_id: int = request.args.get('genre_id', type=int)
-        status: str = request.args.get('status', "new")
+        status: str = request.args.get('status', type=str)
 
         movies: list = movie_service.get_all(page, director_id, genre_id, status)
         return MovieSchema(many=True).dump(movies), 200

@@ -3,10 +3,13 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATABASE_PATH = os.path.join(BASE_DIR, 'movies.db')
+
+
 class Config(object):
     DEBUG = True
-    SECRET_HERE = '249y823r9v8238r9u'
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///movies.db'
+    SQLALCHEMY_DATABASE_URI = f'sqlite:///{DATABASE_PATH}'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SECRET = os.getenv('SECRET')
     ALGORITHM = os.getenv('ALGORITHM')
