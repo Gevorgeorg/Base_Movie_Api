@@ -1,13 +1,12 @@
 from dao.director import DirectorDAO
 from service.director import DirectorService
-from setup_db import db
 from dao.model.director import Director
 from unittest.mock import MagicMock
 import pytest
 
 
 @pytest.fixture()
-def director_dao()->MagicMock:
+def director_dao()->DirectorDAO:
     director_dao: DirectorDAO = DirectorDAO(None)
 
     director_one: Director = Director(id=1, name='Biba')
@@ -48,7 +47,7 @@ class TestDirectorService:
 
     def test_update(self) -> None:
         updated_director: dict = {"id": 1, "name": "Bobr"}
-        director: Director = self.director_service.update(updated_director)
+        director: Director = self.director_service.update(updated_director,1)
         assert director.id == 1
         assert director.name == "Bobr"
 

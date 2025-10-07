@@ -1,0 +1,92 @@
+2025-10-07 13:03:42,208 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:25000
+2025-10-07 13:03:42,208 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-07 13:03:42,209 - werkzeug - INFO -  * Restarting with stat
+2025-10-07 13:03:42,892 - werkzeug - WARNING -  * Debugger is active!
+2025-10-07 13:03:42,895 - werkzeug - INFO -  * Debugger PIN: 111-737-578
+2025-10-07 13:03:47,351 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:47] "GET / HTTP/1.1" 200 -
+2025-10-07 13:03:47,537 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:47] "[36mGET /static/css/main.3627056f.chunk.css HTTP/1.1[0m" 304 -
+2025-10-07 13:03:47,539 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:47] "[36mGET /static/js/main.0041c12b.chunk.js HTTP/1.1[0m" 304 -
+2025-10-07 13:03:47,539 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:47] "[36mGET /static/js/2.c38f28a7.chunk.js HTTP/1.1[0m" 304 -
+2025-10-07 13:03:47,592 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:47] "GET / HTTP/1.1" 200 -
+2025-10-07 13:03:47,610 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:47] "GET /genres/ HTTP/1.1" 200 -
+2025-10-07 13:03:47,617 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:47] "GET /directors/ HTTP/1.1" 200 -
+2025-10-07 13:03:47,639 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:47] "GET /movies/?status=new HTTP/1.1" 200 -
+2025-10-07 13:03:47,895 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:47] "[33mGET /manifest.json HTTP/1.1[0m" 404 -
+2025-10-07 13:03:47,896 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:47] "GET / HTTP/1.1" 200 -
+2025-10-07 13:03:47,973 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:47] "[36mGET /static/css/main.3627056f.chunk.css HTTP/1.1[0m" 304 -
+2025-10-07 13:03:47,975 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:47] "[36mGET /static/js/2.c38f28a7.chunk.js HTTP/1.1[0m" 304 -
+2025-10-07 13:03:47,978 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:47] "[36mGET /static/js/main.0041c12b.chunk.js HTTP/1.1[0m" 304 -
+2025-10-07 13:03:48,021 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:48] "GET / HTTP/1.1" 200 -
+2025-10-07 13:03:48,029 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:48] "GET /genres/ HTTP/1.1" 200 -
+2025-10-07 13:03:48,039 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:48] "GET /directors/ HTTP/1.1" 200 -
+2025-10-07 13:03:48,053 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:48] "GET /movies/?status=new HTTP/1.1" 200 -
+2025-10-07 13:03:48,157 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:48] "[33mGET /manifest.json HTTP/1.1[0m" 404 -
+2025-10-07 13:03:49,549 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:49] "[33mGET /genres/1/ HTTP/1.1[0m" 404 -
+2025-10-07 13:03:49,576 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:49] "GET /movies/ HTTP/1.1" 200 -
+2025-10-07 13:03:51,252 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:51] "GET /genres/ HTTP/1.1" 200 -
+2025-10-07 13:03:51,274 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:51] "GET /directors/ HTTP/1.1" 200 -
+2025-10-07 13:03:51,285 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:51] "GET /movies/?status=new HTTP/1.1" 200 -
+2025-10-07 13:03:52,489 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:52] "[33mGET /favorites/movies/ HTTP/1.1[0m" 404 -
+2025-10-07 13:03:52,498 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:52] "[33mGET /movies/12/ HTTP/1.1[0m" 404 -
+2025-10-07 13:03:52,516 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:52] "GET /movies/ HTTP/1.1" 200 -
+2025-10-07 13:03:55,439 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:55] "GET / HTTP/1.1" 200 -
+2025-10-07 13:03:55,478 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:55] "[36mGET /static/css/main.3627056f.chunk.css HTTP/1.1[0m" 304 -
+2025-10-07 13:03:55,486 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:55] "[36mGET /static/js/2.c38f28a7.chunk.js HTTP/1.1[0m" 304 -
+2025-10-07 13:03:55,487 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:55] "[36mGET /static/js/main.0041c12b.chunk.js HTTP/1.1[0m" 304 -
+2025-10-07 13:03:55,504 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:55] "GET /genres/ HTTP/1.1" 200 -
+2025-10-07 13:03:55,504 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:55] "GET / HTTP/1.1" 200 -
+2025-10-07 13:03:55,508 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:55] "GET /directors/ HTTP/1.1" 200 -
+2025-10-07 13:03:55,522 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:55] "GET /movies/?status=new HTTP/1.1" 200 -
+2025-10-07 13:03:55,635 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:03:55] "[33mGET /manifest.json HTTP/1.1[0m" 404 -
+2025-10-07 13:04:04,281 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:04:04] "GET /docs/ HTTP/1.1" 200 -
+2025-10-07 13:04:04,362 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:04:04] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2025-10-07 13:04:04,364 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:04:04] "GET /docs/ HTTP/1.1" 200 -
+2025-10-07 13:04:04,368 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:04:04] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2025-10-07 13:04:04,369 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:04:04] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2025-10-07 13:04:04,371 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:04:04] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2025-10-07 13:04:04,425 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:04:04] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2025-10-07 13:04:04,428 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:04:04] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2025-10-07 13:04:04,430 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:04:04] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2025-10-07 13:04:04,432 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:04:04] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2025-10-07 13:04:04,476 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:04:04] "GET /docs/ HTTP/1.1" 200 -
+2025-10-07 13:04:04,619 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:04:04] "GET /swagger.json HTTP/1.1" 200 -
+2025-10-07 13:04:11,512 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:04:11] "GET /movies/?page=1 HTTP/1.1" 200 -
+2025-10-07 13:04:11,567 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:04:11] "GET /movies/?page=1 HTTP/1.1" 200 -
+2025-10-07 13:05:32,692 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:25000
+2025-10-07 13:05:32,692 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-07 13:05:32,694 - werkzeug - INFO -  * Restarting with stat
+2025-10-07 13:05:33,363 - werkzeug - WARNING -  * Debugger is active!
+2025-10-07 13:05:33,367 - werkzeug - INFO -  * Debugger PIN: 111-737-578
+2025-10-07 13:05:34,319 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:34] "GET / HTTP/1.1" 200 -
+2025-10-07 13:05:34,390 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:34] "GET / HTTP/1.1" 200 -
+2025-10-07 13:05:34,549 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:34] "[36mGET /static/js/2.c38f28a7.chunk.js HTTP/1.1[0m" 304 -
+2025-10-07 13:05:34,551 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:34] "[36mGET /static/css/main.3627056f.chunk.css HTTP/1.1[0m" 304 -
+2025-10-07 13:05:34,553 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:34] "[36mGET /static/js/main.0041c12b.chunk.js HTTP/1.1[0m" 304 -
+2025-10-07 13:05:34,584 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:34] "GET /static/css/main.3627056f.chunk.css HTTP/1.1" 200 -
+2025-10-07 13:05:34,585 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:34] "GET /static/js/2.c38f28a7.chunk.js HTTP/1.1" 200 -
+2025-10-07 13:05:34,586 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:34] "GET /static/js/main.0041c12b.chunk.js HTTP/1.1" 200 -
+2025-10-07 13:05:34,667 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:34] "GET /genres/ HTTP/1.1" 200 -
+2025-10-07 13:05:34,670 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:34] "GET / HTTP/1.1" 200 -
+2025-10-07 13:05:34,673 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:34] "GET /directors/ HTTP/1.1" 200 -
+2025-10-07 13:05:34,689 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:34] "GET /movies/?status=new HTTP/1.1" 200 -
+2025-10-07 13:05:34,954 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:34] "[33mGET /manifest.json HTTP/1.1[0m" 404 -
+2025-10-07 13:05:38,507 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:38] "[33mGET /genres/1/ HTTP/1.1[0m" 404 -
+2025-10-07 13:05:38,527 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:38] "GET /movies/ HTTP/1.1" 200 -
+2025-10-07 13:05:39,722 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:39] "GET /genres/ HTTP/1.1" 200 -
+2025-10-07 13:05:39,736 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:39] "GET /directors/ HTTP/1.1" 200 -
+2025-10-07 13:05:39,747 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:39] "GET /movies/?status=new HTTP/1.1" 200 -
+2025-10-07 13:05:46,777 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:46] "GET /genres/ HTTP/1.1" 200 -
+2025-10-07 13:05:46,836 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:46] "GET /genres/ HTTP/1.1" 200 -
+2025-10-07 13:05:46,842 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:46] "GET /genres/ HTTP/1.1" 200 -
+2025-10-07 13:05:46,902 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:05:46] "GET /genres/ HTTP/1.1" 200 -
+2025-10-07 13:06:46,441 - service.authentification - ERROR - Ошибка: Пользователь с почтой testsd0t@mail.ru уже существует
+2025-10-07 13:06:46,441 - views.authentification - ERROR - Ошибка регистрации: Пользователь с таким email уже существует
+2025-10-07 13:06:46,441 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:06:46] "[31m[1mPOST /auth/register HTTP/1.1[0m" 400 -
+2025-10-07 13:07:06,307 - service.authentification - INFO - Пользователь успешно прошел аутентификацию
+2025-10-07 13:07:06,307 - views.authentification - INFO - Вход в систему выполнен успешно
+2025-10-07 13:07:06,307 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:07:06] "[35m[1mPOST /auth/login HTTP/1.1[0m" 201 -
+2025-10-07 13:07:13,038 - service.authentification - INFO - Пользователь успешно прошел аутентификацию
+2025-10-07 13:07:13,038 - views.authentification - INFO - Вход в систему выполнен успешно
+2025-10-07 13:07:13,039 - werkzeug - INFO - 127.0.0.1 - - [07/Oct/2025 13:07:13] "[35m[1mPOST /auth/login HTTP/1.1[0m" 201 -

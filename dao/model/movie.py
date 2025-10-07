@@ -1,5 +1,4 @@
-from marshmallow import Schema, fields
-
+from marshmallow import Schema, fields, validate
 from setup_db import db
 
 
@@ -10,7 +9,7 @@ class Movie(db.Model):
     description: str = db.Column(db.String(255))
     trailer: str = db.Column(db.String(255))
     year: int = db.Column(db.Integer)
-    rating: str = db.Column(db.String(15))
+    rating: str = db.Column(db.String(7))
     genre_id: int = db.Column(db.Integer, db.ForeignKey("genre.id"))
     genre = db.relationship("Genre", foreign_keys=[genre_id])
     director_id: int = db.Column(db.Integer, db.ForeignKey("director.id"))
@@ -25,11 +24,11 @@ class Movie(db.Model):
 
 class MovieSchema(Schema):
     id: int = fields.Integer()
-    title: str = fields.String()
-    description: str = fields.String()
-    trailer: str = fields.String()
+    title: str = fields.String(validate=validate.Length(max=50))
+    description: str = fields.String(validate=validate.Length(max=255))
+    trailer: str = fields.String(validate=validate.Length(max=255))
     year: int = fields.Integer()
-    rating: str = fields.String()
+    rating: str = fields.String(validate=validate.Length(max=7))
     genre: str = fields.String(attribute="genre.name")
     genre_id: int = fields.Integer(attribute="genre_id")
     director_id: int = fields.Integer(attribute="director.id")

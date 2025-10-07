@@ -1,13 +1,12 @@
 from dao.movie import MovieDAO
 from service.movie import MovieService
-from setup_db import db
 from dao.model.movie import Movie
 from unittest.mock import MagicMock, patch
 import pytest
 
 
 @pytest.fixture()
-def movie_dao() -> MagicMock:
+def movie_dao() -> MovieDAO:
     with patch('dao.model.director.Director'), patch('dao.model.genre.Genre'):
 
         movie_dao: MovieDAO = MovieDAO(None)
@@ -71,7 +70,7 @@ class TestMovieService:
                                "rating": "R",
                                "genre_id": 5,
                                "director_id": 4}
-        movie: Movie = self.movie_service.update(updated_movie)
+        movie: Movie = self.movie_service.update(1,updated_movie)
         assert movie.id == 1
         assert movie.title == "NewShrek"
         assert movie.rating == "R"

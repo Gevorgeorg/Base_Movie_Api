@@ -1,7 +1,7 @@
 from flask import request
 from flask_restx import abort
 import jwt
-from constants import SECRET, ALGORITHM
+from config import Config
 
 
 def auth_required(func):
@@ -11,7 +11,7 @@ def auth_required(func):
         data: str = request.headers.get('Authorization')
         token: str = data.split('Bearer ')[-1]
         try:
-            jwt.decode(token, SECRET, algorithms=ALGORITHM)
+            jwt.decode(token, Config.SECRET, algorithms=Config.ALGORITHM)
         except Exception as er:
             abort(401)
 
@@ -27,7 +27,7 @@ def admin_required(func):
         data: str = request.headers.get('Authorization')
         token: str = data.split('Bearer ')[-1]
         try:
-            user: dict = jwt.decode(token, SECRET, algorithms=ALGORITHM)
+            user: dict = jwt.decode(token, Config.SECRET, algorithms=Config.ALGORITHM)
             role: str = user.get('role')
         except Exception as er:
             abort(401)

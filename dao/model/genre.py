@@ -1,5 +1,4 @@
-from marshmallow import Schema, fields
-
+from marshmallow import Schema, fields, validate
 from setup_db import db
 
 
@@ -17,4 +16,4 @@ class Genre(db.Model):
 
 class GenreSchema(Schema):
     id: int = fields.Int()
-    name: str = fields.Str()
+    name: str = fields.Str(validate=validate.Length(max=30))

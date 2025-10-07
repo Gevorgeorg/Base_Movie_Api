@@ -1,13 +1,12 @@
 from dao.genre import GenreDAO
 from service.genre import GenreService
-from setup_db import db
 from dao.model.genre import Genre
 from unittest.mock import MagicMock
 import pytest
 
 
 @pytest.fixture()
-def genre_dao()->MagicMock:
+def genre_dao()->GenreDAO:
     genre_dao: GenreDAO = GenreDAO(None)
 
     genre_one: Genre = Genre(id=1, name='Biba')
@@ -48,7 +47,7 @@ class TestGenreService:
 
     def test_update(self) -> None:
         updated_genre: dict = {"id": 1, "name": "Bobr"}
-        genre: Genre = self.genre_service.update(updated_genre)
+        genre: Genre = self.genre_service.update(updated_genre,1)
         assert genre.id == 1
         assert genre.name == "Bobr"
 

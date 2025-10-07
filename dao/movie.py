@@ -15,7 +15,6 @@ class MovieDAO:
 
         query = self.session.query(Movie)
 
-
         if director_id:
             query = query.filter(Movie.director_id == director_id)
         if genre_id:

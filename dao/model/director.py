@@ -1,5 +1,5 @@
 from setup_db import db
-from marshmallow import Schema, fields
+from marshmallow import Schema, fields, validate
 
 
 class Director(db.Model):
@@ -16,4 +16,4 @@ class Director(db.Model):
 
 class DirectorSchema(Schema):
     id: int = fields.Int()
-    name: str = fields.Str()
+    name: str = fields.Str(validate=validate.Length(max=55))

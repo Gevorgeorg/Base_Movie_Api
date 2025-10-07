@@ -1,7 +1,6 @@
 from flask import Flask, render_template
 from flask_restx import Api, cors
 from flask_cors import CORS
-
 from config import Config
 from setup_db import db
 from views.directors import director_ns
@@ -9,12 +8,18 @@ from views.genres import genre_ns
 from views.movies import movie_ns
 from views.users import user_ns
 from views.authentification import auth_ns
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[logging.FileHandler('app.log'),
+              logging.StreamHandler()])
 
 api = Api(
-    title="Flask Course Project 3",
-    doc="/docs",
-    description="API для управления фильмами"
-)
+    title="Base Movie API",
+    doc="/docs/",
+    description="API для управления фильмами")
 
 
 def create_app() -> Flask:

@@ -10,6 +10,11 @@ class UserDAO:
 
         return self.session.query(User).get(id)
 
+    def get_by_email(self, email: str) -> User:
+        """Найти пользователя по email"""
+
+        return self.session.query(User).filter(User.email == email).first()
+
     def get_all(self) -> list:
         """Получить всех пользователей, с возможной фильтрацией"""
 

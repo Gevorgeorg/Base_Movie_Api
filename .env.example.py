@@ -1,0 +1,4 @@
+PWD_HASH_SALT=your_hash_salt
+PWD_HASH_ITERATIONS=100_000
+SECRET=your_secret_key
+ALGORITHM=JWT_algorithm

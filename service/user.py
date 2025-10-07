@@ -1,5 +1,6 @@
 from dao.user import UserDAO
 from dao.model.user import User
+from flask import abort
 
 
 class UserService:
@@ -21,30 +22,36 @@ class UserService:
         """Добавить нового пользователя с хешированием пароля"""
 
         if 'password' in data:
-            data['password'] = User.get_hash(data['password'])
+            data['password'] = User.get_hash(data.get('password'))
 
         return self.dao.create(data)
 
-    def update(self, id: int, data: dict) -> User:
-        """Обновить информацию о пользователе"""
+    def update(self, data: dict, id: int) -> User:
+        """Обновить пароль"""
 
-        user = self.get_one(id)
+        try:
+            user: User = self.get_one(id)
 
-        for key, value in data.items():
-            if hasattr(user, key) and key != 'id':
-                if key == 'password':
-                    value = User().get_hash(value)
-                setattr(user, key, value)
+            if 'password_1' not in data or 'password_2' not in data:
+                raise ValueError("Необходимо предоставить текущий и новый пароль")
 
-        return self.dao.update(user)
+            if not user.check_password(data.get('password_1')):
+                raise ValueError("Неверный текущий пароль")
+
+            user.set_password(data.get('password_2'))
+
+            return self.dao.update(user)
+
+        except ValueError as er:
+            abort(400, str(er))
 
     def partially_update(self, data: dict, id: int):
         """Частичное обновление пользователя"""
 
-        user = self.dao.get_one(id)
-        for key, value in data.items():
-            if hasattr(user, key):
-                setattr(user, key, value)
+        user: User = self.dao.get_one(id)
+        user.username = data.get("username")
+        user.favorite_genre = data.get("favorite_genre")
+
         return self.dao.update(user)
 
     def delete(self, id: int) -> None:
@@ -52,4 +59,3 @@ class UserService:
 
         self.get_one(id)
         self.dao.delete(id)
-
