@@ -23,7 +23,7 @@ API для управления фильмами, с системой аутен
 
 ## Как запустить
 
-- Cклонируйте репозиторий git clone https://github.com/your-username/movie-api.git
+- Cклонируйте репозиторий git clone https://github.com/Gevorgeorg/Base_Movie_Api.git
 - Создание виртуального окружения python -m venv
 - Установка зависимостей проекта pip install -r requirements.txt 
 - Заполните - [.env](.env)
